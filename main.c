@@ -1,4 +1,5 @@
 #include <printf.h>
+#include "Chip-8/chip8.h"
 #include <SDL.h>
 #include <SDL_ttf.h>
 #include <SDL_image.h>
