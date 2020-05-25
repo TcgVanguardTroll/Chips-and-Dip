@@ -5,6 +5,7 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 
+
 // SDL Window
 SDL_Window *_window;
 

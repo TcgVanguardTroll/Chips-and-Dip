@@ -16,7 +16,7 @@ project(SDL2_Basic_Setup)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/CMAKE")
-set(SOURCE_FILES main.c Chip-8/chip8mem.c)
+set(SOURCE_FILES main.c Chip-8/chip8mem.c Chip-8/chip8registers.h Chip-8/chip8stack.h Chip-8/chip8stack.c Chip-8/chip8keyboard.h Chip-8/chip8keyboard.c)
 
 Message("")
 Message( STATUS "SOURCE entry point : " ${SOURCE_FILES} )
@@ -26,7 +26,7 @@ Message("")
 
 # ------- Executable ----- #
 
-ADD_EXECUTABLE(SDL2_Basic_Setup ${SOURCE_FILES})
+ADD_EXECUTABLE(SDL2_Basic_Setup ${SOURCE_FILES} Chip-8/chip8keyboard.h)
 
 # ------- End Executable - #
 
