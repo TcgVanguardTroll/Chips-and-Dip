@@ -2,6 +2,7 @@
 // Created by Jordan Grant on 5/24/20.
 //
 
+#include <assert.h>
 #include "chip8keyboard.h"
 
 static void chip8_keyboard_bounds_check(int key) {

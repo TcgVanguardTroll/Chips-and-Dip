@@ -20,6 +20,10 @@
 
 #define CHIP8_KEYS 16
 
+#define CHIP8_CHARSET_SIZE 80
+
+#define CHIP8_ CHAR__LOAD_ADDR 0x00
+
 #define CHIP8_TITLE "Chip-8 Emulator"
 
 

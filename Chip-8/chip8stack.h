@@ -13,8 +13,8 @@ typedef struct ChipStack {
 } ChipStack;
 
 
-void chip8_stack_push(Chip8 *chip8, unsigned short val);
+void chip8_stack_push(struct Chip8 *chip8, unsigned short val);
 
-unsigned short chip8_stack_pop(Chip8 *chip8);
+unsigned short chip8_stack_pop(struct Chip8 *chip8);
 
 #endif //SDL2_BASIC_SETUP_CHIP8STACK_H

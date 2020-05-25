@@ -5,8 +5,8 @@
 #include "chip8mem.h"
 #include "assert.h"
 
-static chip8_bounds_check(int idx) {
-    assert(idx >= 0 && idx < CHIP8_MEMORY)
+static void chip8_bounds_check(int idx) {
+    assert(idx >= 0 && idx < CHIP8_MEMORY);
 }
 
 void chip8_set_mem(ChipMem *memory, int idx, unsigned char val) {
