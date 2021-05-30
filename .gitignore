@@ -1,6 +1,6 @@
 # Prerequisites
 *.d
-*.make
+*.cmake
 
 # Object files
 *.o
