@@ -17,4 +17,16 @@ typedef struct Chip8 {
     ChipStack chipStack;
 } Chip8;
 
+
+/*
+    A struct for the Chip8's registers
+*/
+typedef struct ChipReg {
+    uint8_t pc;
+    uint8_t sp;
+    uint8_t i;
+    uint8_t delay;
+    uint8_t key;
+    uint8_t sound;
+    
 #endif //SDL2_BASIC_SETUP_CHIP_8_H

@@ -31,3 +31,14 @@ unsigned char chip8_charset[CHIP8_CHARSET_SIZE] =
 void chip8_init(Chip8 chip8) {
     memset(&chip8, 0, sizeof(chip8));
 }
+
+/*
+        This function will compute the factorial of a number n.
+*/
+int computeFactorial(int n) {
+            if (n == 0) {
+        return 1;
+    } else {
+        return n * computeFactorial(n - 1);
+    }
+}
